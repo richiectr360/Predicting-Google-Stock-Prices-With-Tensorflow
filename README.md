@@ -103,10 +103,10 @@ pip install -r requirements.txt
 
 | Model | Train R² | Test R² | Test RMSE | Test MAE |
 |-------|----------|---------|-----------|----------|
-| Version 1 (Baseline) | 0.974 | 0.697 | 0.074 | - |
-| Version 2 (Early Stop) | 0.975 | 0.803 | 0.060 | - |
+| Version 1 (Baseline) | 0.974 | 0.697 | 0.074 | 0.064 |
+| Version 2 (Early Stop) | 0.975 | 0.803 | 0.060 | 0.052 |
 | Version 3 (Optimized) | 0.985 | **0.839** | **0.054** | **0.047** |
-| Baseline (ARIMA) | - | 0.982 | 0.018 | 0.013 |
+| Baseline (ARIMA) | N/A | 0.982 | 0.018 | 0.013 |
 
 **Note**: While ARIMA shows higher R² (0.982 vs 0.839), this is expected for stock price data which follows a random walk pattern. Statistical significance tests (paired t-test: p < 0.001, Cohen's d = -2.49) confirm that the LSTM model achieves **significantly lower prediction errors** than ARIMA, demonstrating superior forecasting accuracy despite the R² metric. The LSTM's lower RMSE (0.054 vs 0.018) and MAE (0.047 vs 0.013) on normalized data, combined with statistical validation, show meaningful improvement in prediction quality.
 

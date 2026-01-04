@@ -19,6 +19,10 @@ __pycache__/
 .jupyter/
 *.ipynb_history
 
+# Editor History Files
+.history/
+*.history
+
 # IDE - VSCode
 .vscode/
 *.code-workspace

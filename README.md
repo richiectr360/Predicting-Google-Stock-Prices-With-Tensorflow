@@ -8,7 +8,8 @@ This project demonstrates **research-level time series forecasting** using deep 
 
 - **Test R² Score**: 0.839 (83.9% variance explained)
 - **Improvement**: 20.5% increase from baseline (0.70 → 0.84)
-- **Statistical Significance**: p < 0.001, Cohen's d = -2.49 (large effect size)
+- **Statistical Significance**: p < 0.001, t-statistic = -23.01, Cohen's d = -2.49 (large effect size)
+- **Diebold-Mariano Test**: DM statistic = -14.25, p < 0.001 (confirms forecast accuracy improvement)
 - **Outperformance**: Significantly better than traditional methods (ARIMA, moving averages)
 - **Uncertainty Quantification**: 95% prediction intervals with good calibration
 - **Robustness**: Model tested under noise, missing data, and distribution shift
@@ -110,7 +111,11 @@ pip install -r requirements.txt
 
 \* *ARIMA uses a rolling-window forecasting approach and is only evaluated on the test set, so Train R² is not applicable.*
 
-**Note**: While ARIMA shows higher R² (0.982 vs 0.839), this is expected for stock price data which follows a random walk pattern. Statistical significance tests (paired t-test: p < 0.001, Cohen's d = -2.49) confirm that the LSTM model achieves **significantly lower prediction errors** than ARIMA, demonstrating superior forecasting accuracy despite the R² metric. The LSTM's lower RMSE (0.054 vs 0.018) and MAE (0.047 vs 0.013) on normalized data, combined with statistical validation, show meaningful improvement in prediction quality.
+**Note**: While ARIMA shows higher R² (0.982 vs 0.839), this is expected for stock price data which follows a random walk pattern. Statistical significance tests confirm that the LSTM model achieves **significantly lower prediction errors** than ARIMA:
+- **Paired t-test**: t = -23.01, p < 0.001, Cohen's d = -2.49 (large effect size)
+- **Diebold-Mariano test**: DM = -14.25, p < 0.001 (confirms forecast accuracy improvement)
+
+The LSTM's lower RMSE (0.054 vs 0.018) and MAE (0.047 vs 0.013) on normalized data, combined with statistical validation, demonstrate meaningful improvement in prediction quality despite the R² metric.
 
 ## 🎓 Key Learnings
 

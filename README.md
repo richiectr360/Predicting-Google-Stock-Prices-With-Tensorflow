@@ -7,7 +7,7 @@ This project demonstrates **research-level time series forecasting** using deep 
 ## 📊 Key Results
 
 - **Test R² Score**: 0.839 (83.9% variance explained)
-- **Improvement**: 20.5% increase from baseline (0.70 → 0.84)
+- **Improvement**: 20.4% increase from baseline (0.697 → 0.839)
 - **Statistical Significance**: p < 0.001, t-statistic = -23.01, Cohen's d = -2.49 (large effect size)
 - **Diebold-Mariano Test**: DM statistic = -14.25, p < 0.001 (confirms forecast accuracy improvement)
 - **Outperformance**: Significantly better than traditional methods (ARIMA, moving averages)
@@ -85,7 +85,7 @@ pip install -r requirements.txt
 
 ### Technical Achievements
 
-- **Systematic Optimization**: 20.5% improvement through iterative refinement
+- **Systematic Optimization**: 20.4% improvement through iterative refinement (0.697 → 0.839 R²)
 - **Uncertainty Quantification**: Monte Carlo Dropout with 95% prediction intervals
 - **Robustness Validation**: Model tested under noise, missing data, and distribution shift
 - **Interpretability**: Permutation importance and SHAP analysis reveal model decisions

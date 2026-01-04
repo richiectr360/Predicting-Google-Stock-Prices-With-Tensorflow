@@ -1,0 +1,76 @@
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Jupyter Notebook History
+.jupyter/
+*.ipynb_history
+
+# IDE - VSCode
+.vscode/
+*.code-workspace
+
+# IDE - PyCharm
+.idea/
+*.iml
+
+# IDE - Jupyter
+.jupyter/
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Project Specific - Generated Output Files
+outputs/excel/*.csv
+outputs/excel/*.xlsx
+outputs/images/*.png
+outputs/images/*.jpg
+outputs/images/*.jpeg
+*.pdf
+!requirements.txt
+!GOOG.csv  # Keep source data file
+
+# Model files (if large)
+*.h5
+*.hdf5
+*.pb
+*.pkl
+*.joblib
+
+# Logs
+*.log
+logs/
+
+# Environment variables
+.env
+.env.local
+
+# Temporary files
+*.tmp
+*.temp
+~$*
+
+# Data files (uncomment if you don't want to track data)
+# *.csv
+# data/
+# datasets/
+
